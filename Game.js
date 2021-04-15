@@ -52,9 +52,8 @@ class Game{
             x = 500-allPlayers[plr].distance;
             y=500;
             
-            players[index -1].x = x;
-            players[index - 1].y = y;
-
+            players[index-1].x = x;
+            players[index-1].y = y;
             // Differentiate the main player by printing
             // the name of the player on the basket. 
         if( index === player.index){
