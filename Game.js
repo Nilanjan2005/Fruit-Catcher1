@@ -66,15 +66,14 @@ class Game{
 
         // Give movements for the players using arrow keys
 if(keyIsDown(LEFT_ARROW) && player.index !== null ){
-    player.distance -= 10;
-    player.update();
-}
-if(keyIsDown(RIGHT_ARROW) && player.index !== null ){
     player.distance += 10;
     player.update();
 }
-
-        // Create and spawn fruits randomly
+if(keyIsDown(RIGHT_ARROW) && player.index !== null ){
+    player.distance -= 10;
+    player.update();
+}
+// Create and spawn fruits randomly
 if (frameCount%20 === 0){
 
      fruits = createSprite(random(100,1000),0,100,100)
@@ -93,6 +92,7 @@ if (frameCount%20 === 0){
          break;
      }
      fruitGroup.add(fruits);
+    
 }
         
     }
