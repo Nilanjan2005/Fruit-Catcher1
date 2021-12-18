@@ -11,19 +11,25 @@
     <script src="https://www.gstatic.com/firebasejs/8.2.10/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.2.10/firebase-database.js"></script>
 <!-- The core Firebase JS SDK is always required and must be listed first -->
-<script>
-  // Your web app's Firebase configuration
-  var firebaseConfig = {
-    apiKey: "AIzaSyBQpY8sR3ykAw4b4Mm2dtOY6e-OHaF8IoA",
-    authDomain: "fruit-catcher1-9782b.firebaseapp.com",
-    projectId: "fruit-catcher1-9782b",
-    storageBucket: "fruit-catcher1-9782b.appspot.com",
-    messagingSenderId: "186332337861",
-    appId: "1:186332337861:web:4e2c5fc232662c85e782ac"
-  };
-  // Initialize Firebase
-  firebase.initializeApp(firebaseConfig);
-</script>
+      <script type="module">
+    // Import the functions you need from the SDKs you need
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/9.6.1/firebase-app.js";
+    // TODO: Add SDKs for Firebase products that you want to use
+    // https://firebase.google.com/docs/web/setup#available-libraries
+
+    // Your web app's Firebase configuration
+    const firebaseConfig = {
+      apiKey: "AIzaSyDguW6aLFROsgpXqkv7EKWDM0U_lAHqM-s",
+      authDomain: "fruitcatcher-3a47f.firebaseapp.com",
+      projectId: "fruitcatcher-3a47f",
+      storageBucket: "fruitcatcher-3a47f.appspot.com",
+      messagingSenderId: "694164592416",
+      appId: "1:694164592416:web:7d45993891f7e897f0a945"
+    };
+
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+  </script>
     <!-- TODO: Add SDKs for Firebase products that you want to use
         https://firebase.google.com/docs/web/setup#available-libraries -->
 
